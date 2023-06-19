@@ -1,8 +1,14 @@
+<<<<<<< HEAD
 const express = require("express")
 const dotenv = require("dotenv")
 const morgan = require("morgan")
 const cors = require("cors")
 
+=======
+const express = require('express');
+import dotenv from "dotenv";
+import morgan from "morgan";
+>>>>>>> ec9547a3493236014d8c1dfe400767e945bc3275
 import connectDB from "./config/db.js";
 import authRoutes from "./routes/authRoute.js";
 import categoryRoutes from "./routes/categoryRoutes.js";
@@ -39,6 +45,11 @@ const PORT = process.env.PORT || 8080;
 //run listen
 app.listen(PORT, () => {
   console.log(
+<<<<<<< HEAD
     `Server Running on ${process.env.DEV_MODE} mode on port ${PORT}`
   );
 });
+=======
+    `Server Running on ${process.env.DEV_MODE} mode on port ${PORT}`);
+});
+>>>>>>> ec9547a3493236014d8c1dfe400767e945bc3275
